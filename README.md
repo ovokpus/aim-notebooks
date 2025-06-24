@@ -281,6 +281,27 @@ By working through these notebooks, you will learn:
 - PPO-optimized model with reduced toxicity
 - Comparative analysis of pre/post RLHF performance
 
+## 🛠 Troubleshooting
+
+### Notebook Rendering Issues on GitHub
+
+If you encounter notebooks that don't render properly on GitHub (showing widget metadata errors), use this solution:
+
+**Problem:** Notebooks display invalid widget metadata errors and fail to render on GitHub.
+
+**Solution:**
+```bash
+# Clear invalid metadata from the notebook
+jupyter nbconvert --inplace --ClearMetadataPreprocessor.enabled=True your_notebook.ipynb
+
+# Commit the cleaned notebook
+git add your_notebook.ipynb
+git commit -m "Strip invalid widget metadata so GitHub renders"
+git push
+```
+
+This command removes problematic metadata that can prevent GitHub from properly rendering Jupyter notebooks.
+
 ## 🤝 Contributing
 
 This repository is part of the AI Makerspace educational curriculum. If you find issues or have suggestions for improvements:
