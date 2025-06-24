@@ -58,7 +58,7 @@ Professional approach to working with GPT-4.1-nano API with advanced prompting t
 
 ### **Advanced Level**
 
-### 4. **LLME_Challenge_staged.ipynb** - LLM Fine-Tuning Challenge
+### 4. **llm_fine-tuning_with_qlora.ipynb** - LLM Fine-Tuning with QLoRA
 A complete end-to-end tutorial for fine-tuning large language models using Parameter-Efficient Fine-Tuning (PEFT) techniques.
 
 **Key Features:**
@@ -99,7 +99,7 @@ A practical implementation of Reinforcement Learning from Human Feedback for imp
 
 ### Recommended Learning Path
 1. **Start with Foundation**: `llm_python_basics_extended.ipynb` → `python_openai.ipynb` → `Accessing_GPT_4_1_nano_Like_a_Developer.ipynb`
-2. **Advance to Training**: `LLME_Challenge_staged.ipynb` → `Reward_Model_and_PPO_Training_RLHF_in_Practice.ipynb`
+2. **Advance to Training**: `llm_fine-tuning_with_qlora.ipynb` → `Reward_Model_and_PPO_Training_RLHF_in_Practice.ipynb`
 
 ### Installation
 The notebooks include installation cells for all required dependencies:
@@ -138,8 +138,8 @@ pip install -qU transformers accelerate bitsandbytes peft trl datasets tqdm
 
 #### **Advanced Notebooks** (GPU Required):
 
-**LLM Fine-Tuning (LLME Challenge):**
-1. Open `LLME_Challenge_staged.ipynb` in Google Colab Pro
+**LLM Fine-Tuning with QLoRA:**
+1. Open `llm_fine-tuning_with_qlora.ipynb` in Google Colab Pro
 2. Ensure you have an A100 GPU runtime selected
 3. Set up your Hugging Face token for model uploads
 4. Follow the 5 main tasks:
@@ -271,7 +271,7 @@ By working through these notebooks, you will learn:
 - Production-ready API integration patterns
 
 ### **Advanced Level**
-**LLME Challenge:**
+**QLoRA Fine-Tuning:**
 - Fine-tuned model uploaded to Hugging Face Hub
 - Demonstration of improved legal document summarization
 - Understanding of LoRA efficiency vs. full fine-tuning
